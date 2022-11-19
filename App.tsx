@@ -1,17 +1,6 @@
 import React, { useState } from 'react';
+import { netmaskLengthToIp } from './addressCalculations';
 import IpCalculator from './IpCalculator';
-
-const convertIpToDec = (ip: any[]) =>
-  ip.map((octet) => String(parseInt(octet, 2)));
-const netmaskLengthToIp = (length: number): string[] =>
-  convertIpToDec(
-    ['', '', '', ''].map((_, octetNo) =>
-      new Array(8)
-        .fill('0')
-        .map((_, bitNo) => (octetNo * 8 + (bitNo + 1) > length ? '0' : '1'))
-        .join('')
-    )
-  );
 
 function App() {
   const [ip, setIp] = useState<string>('192.168.1.145');
