@@ -29,6 +29,7 @@ function App() {
 
   return (
     <main>
+      <img src="http://2.bp.blogspot.com/_KjNkTh3VA1Y/S8rCAPONZ4I/AAAAAAAAAPo/C76ssp9fsU0/s1600/subnetting_c.png" />
       <form>
         <label htmlFor="ip">Ip</label>
         <input
