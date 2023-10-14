@@ -1,3 +1,32 @@
 # network-calculator
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/react-ts-midhjt)
+Simple ui to calculate network ip masks and subnests
+
+## develop
+
+install node 18
+
+```
+npm ci
+npm run
+```
+
+## run prod
+
+```
+npm ci
+npm run build
+```
+or use docker
+
+```
+docker build -t networkcalculator:latest .
+docker run --rm -d -p 8080:8080/tcp networkcalculator:latest 
+```
+
+## publish docker image
+
+```
+docker build -t networkcalculator:latest .
+docker image push devchew/networkcalculator:latest
+```

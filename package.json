@@ -5,16 +5,16 @@
   "dependencies": {
     "@types/react": "^18.0.8",
     "@types/react-dom": "^18.0.2",
+    "http-server": "^14.1.1",
     "react": "^18.1.0",
     "react-dom": "^18.1.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html",
+    "serve": "http-server dist -p 8080"
   },
   "devDependencies": {
-    "react-scripts": "latest"
+    "parcel": "^2.10.0"
   }
 }
