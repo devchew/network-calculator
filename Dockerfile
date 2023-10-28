@@ -19,5 +19,5 @@ COPY --from=DEVELOPMENT /usr/src/app/package-lock.json ./package-lock.json
 
 RUN npm ci --production
 
-EXPOSE 8080
+EXPOSE 80
 CMD [ "npm", "run", "serve" ]
