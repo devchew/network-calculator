@@ -2,13 +2,27 @@
 
 Simple ui to calculate network ip masks and subnests
 
+## Quickstart
+
+Docker
+```
+docker run -d -p 8080:8080/tcp networkcalculator:latest 
+```
+
+or run from source
+```
+npm ci
+npm run build
+npm run serve
+```
+
 ## develop
 
 install node 18
 
 ```
 npm ci
-npm run
+npm run start
 ```
 
 ## run prod
