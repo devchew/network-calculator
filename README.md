@@ -27,6 +27,6 @@ docker run --rm -d -p 8080:8080/tcp networkcalculator:latest
 ## publish docker image
 
 ```
-docker build -t networkcalculator:latest .
+docker build -t devchew/networkcalculator:latest .
 docker image push devchew/networkcalculator:latest
 ```
